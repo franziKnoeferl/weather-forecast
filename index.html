@@ -3,9 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather-forecast</title>
   </head>
   <body>
+        <div class="box">
+      <header>
+        <form class="searchbar">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search"
+            id="search"
+          />
+          <input type="submit" value="Search" class="searchbutton" />
+        </form>
+      </header>
+      <div class="header">
+        <div>
+          <h1 id="city">Paris</h1>
+
+          <p class="weather-data">
+            <span id="date">Saturday 10:14</span><br />
+            Humidity <strong class="marked">87%,</strong>Wind:
+            <strong class="marked">7.2km/h</strong>
+          </p>
+        </div>
+        <div id="current-temperature">
+          🌞
+          <div id="temperature" class="temperature">14°C</div>
+        </div>
+      </div>
     <footer>
       Coded by
       <a href="https://github.com/franziKnoeferl" target="blank"

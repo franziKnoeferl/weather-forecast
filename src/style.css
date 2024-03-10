@@ -1,0 +1,84 @@
+body {
+  background: #f9f7fe;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
+  color: #a9a6b5;
+}
+
+.box {
+  display: block;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+.searchbar {
+  display: flex;
+  gap: 10px;
+}
+
+.search {
+  flex: 1;
+  background: #f9f7fe;
+  border-radius: 5px;
+  border: #f9f7fe;
+  padding: 20px;
+  width: 450px;
+  font-size: 16px;
+}
+.searchbutton {
+  background: #885df1;
+  color: #fff;
+  border: #885df1;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.header {
+  margin: 50px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  margin: 0 0 20px 0;
+  color: black;
+}
+.marked {
+  color: #f65282;
+}
+#current-temperature {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 0 150px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.current-temperature div {
+  margin-right: 5px;
+}
+
+.weather-forecast {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px 20px 20px;
+}
+
+li {
+  display: block;
+  line-height: 3em;
+  font-size: 20px;
+  text-align: center;
+}
+
+a {
+  color: #885df1;
+}

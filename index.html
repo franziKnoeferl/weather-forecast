@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
   </head>
   <body>
-        <div class="box">
+    <div class="box">
       <header>
         <form class="searchbar">
           <input
@@ -37,48 +37,38 @@
           <div id="temperature" class="temperature">14°C</div>
         </div>
       </div>
-      <ul class="weather-forecast">
-        <li>
-          <div>Sun</div>
-          <div>🌞</div>
-          <div class="grade"><strong>14°C </strong> 18°C</div>
-        </li>
-        <li>
-          <div>Mon</div>
-          <div>⛅</div>
-          <div class="grade"><strong>14°C</strong> 18°C</div>
-        </li>
-        <li>
-          <div>Tue</div>
-          <div>⛅</div>
-          <div class="grade"><strong>14°c </strong> 18°C</div>
-        </li>
-        <li>
-          <div>Wed</div>
-          <div>⛅</div>
-          <div class="grade"><strong>14°c </strong> 18°C</div>
-        </li>
-        <li>
-          <div>Thu</div>
-          <div>⛅</div>
-          <div class="grade"><strong>14°c </strong> 18°C</div>
-        </li>
-      </ul>
-    <footer>
-      Coded by
-      <a href="https://github.com/franziKnoeferl" target="blank"
-        >Franziska Knöferl</a
-      >, is open-sourced on
-      <a
-        href="https://github.com/franziKnoeferl/weather-forecast"
-        target="blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://zeus-weather-forecast.netlify.app/" target="blank"
-        >Netlify</a
-      >
-    </footer>
+      <div class="weather-forecast">
+        <div class="row">
+          <div class="col-2">
+            <div class="date-forecast">Thu</div>
+            <img
+              src="data:image/png;base64,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"
+              width="36"
+              alt=""
+            />
+            <div class="temperature-forecast">
+              <span class="temperature-forecast-maximum">18°</span
+              ><span class="temperature-forecast-minimum">12°</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/franziKnoeferl" target="blank"
+          >Franziska Knöferl</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/franziKnoeferl/weather-forecast"
+          target="blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://zeus-weather-forecast.netlify.app/" target="blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

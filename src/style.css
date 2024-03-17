@@ -65,24 +65,21 @@ h1 {
 }
 
 .weather-forecast {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 20px 20px 20px;
-}
-
-li {
-  display: block;
-  line-height: 3em;
-  font-size: 20px;
+  margin-top: 20px;
   text-align: center;
 }
-
-.grade {
-  color: #f65282;
-  font-size: 15px;
+.date-forecast {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.5;
 }
+.temperature-forecast {
+  font-size: 13px;
+}
+.temperature-forecast-minimum {
+  opacity: 0.5;
+}
+
 a {
   color: #885df1;
 }
